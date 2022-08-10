@@ -335,6 +335,20 @@ body.dark-theme {
 
 /*=============== PRODUCTOS===============*/
 
+
+.info{
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 14px;
+
+}
+
+.productotexto{
+  margin-bottom: 0 !important;
+}
+
 .contenedortalla{
   display: flex;
   flex-wrap: wrap;
