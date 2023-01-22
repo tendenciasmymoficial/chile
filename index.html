@@ -23,6 +23,8 @@
 
         <script src="https://kit.fontawesome.com/0716e95df2.js" crossorigin="anonymous"></script>
 
+        <script src="assets/js/jquery-3.2.1.js"></script>
+        <script src="assets/js/filtro.js"></script>
 
         <title>Tendencias MyM</title>
     </head>
@@ -70,7 +72,7 @@
             <!--==================== HOME ====================-->
             <section class="home section" id="inicio" >
                 <div class="home__container container grid">
-                    <div class="home__data" data-aos="fade-right">
+                    <div class="home__data"  >
                         <h1 class="home__title">
                             Tendencias <br>
                             MyM
@@ -78,7 +80,7 @@
     
                         <p class="home__description">
                             Los zapatos tienen un misterio<br>
-                            que solo tu conoces.
+                            que soló tú conoces.
                         </p>
 
                         <a href="#productos" class="button__link">
@@ -86,7 +88,7 @@
                         </a>
                     </div>
 
-                    <div class="home__images" data-aos="fade-left">
+                    <div class="home__images"  >
                         <img src="assets/img/home-1-min.jpg" alt="home image">
                         <img src="assets/img/home-2-min.jpg" alt="home image">
                     </div>
@@ -101,10 +103,20 @@
                 </h2>
                 <p class="info" >(Para consultar sobre el producto pinchar precio, tallas, o whatsapp)</p>
 
+                <div class="flex-filtros">
+                        <div class="opcion vertodo selected" category="all">
+                            <p class="selectedp" id="p1">Todo</p>
+                        </div>
+
+                        <div class="opcion ofertas" id="ofertas" category="ofertas">
+                            <p id="p2">Ofertas</p>
+                        </div>
+
+                </div>
 
                 <div class="new__container container grid">
                     <!--====================123 ====================-->
-                    <article class="new__card" data-aos="fade-right">
+                    <article class="new__card">
                         <img src="img2/123-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
@@ -124,7 +136,7 @@
                         </a>
                     </article>
                     <!--====================122 ====================-->
-                    <article class="new__card" data-aos="fade-right">
+                    <article class="new__card">
                         <img src="img2/122-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
@@ -144,7 +156,7 @@
                         </a>
                     </article>
                     <!--====================121 ====================-->
-                    <article class="new__card" data-aos="fade-right">
+                    <article class="new__card">
                         <img src="img2/121-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
@@ -164,7 +176,7 @@
                         </a>
                     </article>
                     <!--====================120 ====================-->
-                    <article class="new__card" data-aos="fade-right">
+                    <article class="new__card">
                         <img src="img2/120-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
@@ -184,7 +196,7 @@
                         </a>
                     </article>
                     <!--==================== 94 ====================-->
-                     <article class="new__card" data-aos="fade-right">
+                     <article class="new__card">
                         <img src="assets/img/94-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
@@ -193,19 +205,14 @@
                                     $19.990
                                 </span>
                                 <div class="contenedortalla">
-                                    <p class="talla">35</p>
-                                    <p class="talla">36</p>
-                                    <p class="talla">37</p>
                                     <p class="talla">38</p>
-                                    <p class="talla">39</p>
-                                    <p class="talla">40</p>
                                 </div>
                             </div>
                             <i class="fa-brands fa-whatsapp" style="color: #40EA5F;"></i>
                         </a>
                     </article>
                     <!--==================== 72 ====================-->
-                    <article class="new__card" data-aos="fade-right">
+                    <article class="new__card"  >
                         <img src="assets/img/72-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
@@ -225,7 +232,7 @@
                         </a>
                     </article>
                     <!--====================119 ====================-->
-                    <article class="new__card" data-aos="fade-right">
+                    <article class="new__card"  >
                         <img src="img2/119-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
@@ -245,7 +252,7 @@
                         </a>
                     </article>
                      <!--====================118 ====================-->
-                    <article class="new__card" data-aos="fade-right">
+                    <article class="new__card"  >
                         <img src="img2/118-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
@@ -265,7 +272,7 @@
                         </a>
                     </article>
                     <!--====================117 ====================-->
-                    <article class="new__card" data-aos="fade-right">
+                    <article class="new__card"  >
                         <img src="img2/117-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
@@ -288,7 +295,7 @@
 
 
                     <!--====================116 ====================-->
-                     <article class="new__card" data-aos="fade-right">
+                     <article class="new__card"  >
                         <img src="img2/116-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
@@ -308,7 +315,7 @@
                         </a>
                     </article>
                     <!--====================115 ====================-->
-                     <article class="new__card" data-aos="fade-right">
+                     <article class="new__card"  >
                         <img src="img2/115-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
@@ -317,7 +324,6 @@
                                     $18.990
                                 </span>
                                 <div class="contenedortalla">
-                                    <p class="talla">36</p>
                                     <p class="talla">38</p>
                                     <p class="talla">39</p>
                                 </div>
@@ -326,7 +332,7 @@
                         </a>
                     </article>
                     <!--====================113 ====================-->
-                     <article class="new__card" data-aos="fade-right">
+                     <article class="new__card"  >
                         <img src="img2/113-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
@@ -347,7 +353,7 @@
                         </a>
                     </article>
                     <!--====================112 ====================-->
-                     <article class="new__card" data-aos="fade-right">
+                     <article class="new__card"  >
                         <img src="img2/112-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
@@ -359,7 +365,6 @@
                                     <p class="talla">36</p>
                                     <p class="talla">37</p>
                                     <p class="talla">38</p>
-                                    <p class="talla">39</p>
                                     <p class="talla">40</p>
                                     <p class="talla">41</p>
                                 </div>
@@ -368,7 +373,7 @@
                         </a>
                     </article>
                     <!--====================111 ====================-->
-                     <article class="new__card" data-aos="fade-right">
+                     <article class="new__card"  >
                         <img src="img2/111-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
@@ -380,7 +385,6 @@
                                     <p class="talla">36</p>
                                     <p class="talla">37</p>
                                     <p class="talla">38</p>
-                                    <p class="talla">39</p>
                                     <p class="talla">40</p>
                                     <p class="talla">41</p>
                                 </div>
@@ -389,7 +393,7 @@
                         </a>
                     </article>
                      <!--====================110 ====================-->
-                     <article class="new__card" data-aos="fade-right">
+                     <article class="new__card"  >
                         <img src="img2/110-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
@@ -409,7 +413,7 @@
                         </a>
                     </article>
                      <!--====================109 ====================-->
-                     <article class="new__card" data-aos="fade-right">
+                     <article class="new__card"  >
                         <img src="img2/109-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
@@ -427,7 +431,7 @@
                         </a>
                     </article>
                     <!--====================108 ====================-->
-                     <article class="new__card" data-aos="fade-right">
+                     <article class="new__card"  >
                         <img src="img2/108-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
@@ -447,7 +451,7 @@
                         </a>
                     </article>
                      <!--====================107 ====================-->
-                     <article class="new__card" data-aos="fade-right">
+                     <article class="new__card"  >
                         <img src="img2/107-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
@@ -467,7 +471,7 @@
                         </a>
                     </article>
                     <!--====================106 ====================-->
-                     <article class="new__card" data-aos="fade-right">
+                     <article class="new__card"  >
                         <img src="img2/106-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
@@ -477,7 +481,6 @@
                                 </span>
                                 <div class="contenedortalla">
                                     <p class="talla">35</p>
-                                    <p class="talla">36</p>
                                     <p class="talla">37</p>
                                     <p class="talla">38</p>
                                     <p class="talla">39</p>
@@ -487,7 +490,7 @@
                         </a>
                     </article>
                      <!--====================105 ====================-->
-                     <article class="new__card" data-aos="fade-right">
+                     <article class="new__card"  >
                         <img src="img2/105-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
@@ -508,7 +511,7 @@
                         </a>
                     </article>
                     <!--====================104 ====================-->
-                     <article class="new__card" data-aos="fade-right">
+                     <article class="new__card"  >
                         <img src="img2/104-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
@@ -529,7 +532,7 @@
                         </a>
                     </article>
                      <!--====================103 ====================-->
-                     <article class="new__card" data-aos="fade-right">
+                     <article class="new__card"  >
                         <img src="img2/103-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
@@ -550,7 +553,7 @@
                         </a>
                     </article>
                      <!--====================102 ====================-->
-                     <article class="new__card" data-aos="fade-right">
+                     <article class="new__card"  >
                         <img src="img2/102-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
@@ -565,24 +568,8 @@
                             <i class="fa-brands fa-whatsapp" style="color: #40EA5F;"></i>
                         </a>
                     </article>
-                    <!--====================101 ====================-->
-                     <article class="new__card" data-aos="fade-right">
-                        <img src="img2/101-min.jpg" alt="new image" class="new__img">
-                        
-                        <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
-                            <div class="new__data">
-                                <span class="products__price">
-                                    $12.990
-                                </span>
-                                <div class="contenedortalla">
-                                    <p class="talla">38</p>
-                                </div>
-                            </div>
-                            <i class="fa-brands fa-whatsapp" style="color: #40EA5F;"></i>
-                        </a>
-                    </article>
                     <!--====================100 ====================-->
-                     <article class="new__card" data-aos="fade-right">
+                     <article class="new__card"  >
                         <img src="assets/img/100-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
@@ -601,7 +588,7 @@
                         </a>
                     </article>
                     <!--==================== 99 ====================-->
-                     <article class="new__card" data-aos="fade-right">
+                     <article class="new__card"  >
                         <img src="assets/img/99-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
@@ -620,7 +607,7 @@
                         </a>
                     </article>
                      <!--==================== 98 ====================-->
-                     <article class="new__card" data-aos="fade-right">
+                     <article class="new__card"  >
                         <img src="assets/img/98-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
@@ -638,7 +625,7 @@
                         </a>
                     </article>
                      <!--==================== 97 ====================-->
-                     <article class="new__card" data-aos="fade-right">
+                     <article class="new__card"  >
                         <img src="assets/img/97-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
@@ -656,7 +643,7 @@
                         </a>
                     </article>
                      <!--==================== 96 ====================-->
-                     <article class="new__card" data-aos="fade-right">
+                     <article class="new__card"  >
                         <img src="assets/img/96-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
@@ -673,7 +660,7 @@
                         </a>
                     </article>
                      <!--==================== 95 ====================-->
-                     <article class="new__card" data-aos="fade-right">
+                     <article class="new__card"  >
                         <img src="assets/img/95-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
@@ -692,7 +679,7 @@
                     </article>
 
                      <!--==================== 93 ====================-->
-                     <article class="new__card" data-aos="fade-right">
+                     <article class="new__card"  >
                         <img src="assets/img/93-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
@@ -703,17 +690,14 @@
                                 <div class="contenedortalla">
                                     <p class="talla">35</p>
                                     <p class="talla">36</p>
-                                    <p class="talla">37</p>
                                     <p class="talla">38</p>
-                                    <p class="talla">39</p>
-                                    <p class="talla">40</p>
                                 </div>
                             </div>
                             <i class="fa-brands fa-whatsapp" style="color: #40EA5F;"></i>
                         </a>
                     </article>
                      <!--==================== 92 ====================-->
-                     <article class="new__card" data-aos="fade-right">
+                     <article class="new__card"  >
                         <img src="assets/img/92-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
@@ -730,24 +714,8 @@
                             <i class="fa-brands fa-whatsapp" style="color: #40EA5F;"></i>
                         </a>
                     </article>
-                     <!--==================== 91 ====================-->
-                     <article class="new__card" data-aos="fade-right">
-                        <img src="assets/img/91-min.jpg" alt="new image" class="new__img">
-                        
-                        <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
-                            <div class="new__data">
-                                <span class="products__price">
-                                    $19.990
-                                </span>
-                                <div class="contenedortalla">
-                                    <p class="talla">37</p>
-                                </div>
-                            </div>
-                            <i class="fa-brands fa-whatsapp" style="color: #40EA5F;"></i>
-                        </a>
-                    </article>
                     <!--==================== 90 ====================-->
-                     <article class="new__card" data-aos="fade-right">
+                     <article class="new__card"  >
                         <img src="assets/img/90-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
@@ -759,15 +727,13 @@
                                     <p class="talla">35</p>
                                     <p class="talla">36</p>
                                     <p class="talla">38</p>
-                                    <p class="talla">39</p>
-                                    <p class="talla">40</p>
                                 </div>
                             </div>
                             <i class="fa-brands fa-whatsapp" style="color: #40EA5F;"></i>
                         </a>
                     </article>
                      <!--==================== 88 ====================-->
-                     <article class="new__card" data-aos="fade-right">
+                     <article class="new__card"  >
                         <img src="assets/img/88-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
@@ -785,7 +751,7 @@
                         </a>
                     </article>
                      <!--==================== 87 ====================-->
-                     <article class="new__card" data-aos="fade-right">
+                     <article class="new__card"  >
                         <img src="assets/img/87-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
@@ -802,7 +768,7 @@
                         </a>
                     </article>
                      <!--==================== 86 ====================-->
-                     <article class="new__card" data-aos="fade-right">
+                     <article class="new__card"  >
                         <img src="assets/img/86-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
@@ -818,26 +784,9 @@
                             <i class="fa-brands fa-whatsapp" style="color: #40EA5F;"></i>
                         </a>
                     </article>
-                     <!--==================== 83 ====================-->
-                     <article class="new__card" data-aos="fade-right">
-                        <img src="assets/img/83-min.jpg" alt="new image" class="new__img">
-                        
-                        <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
-                            <div class="new__data">
-                                <span class="products__price">
-                                    $19.990
-                                </span>
-                                <div class="contenedortalla">
-                                    <p class="talla">39</p>
-
-                                </div>
-                            </div>
-                            <i class="fa-brands fa-whatsapp" style="color: #40EA5F;"></i>
-                        </a>
-                    </article>
 
                      <!--==================== 81 ====================-->
-                     <article class="new__card" data-aos="fade-right">
+                     <article class="new__card"  >
                         <img src="assets/img/81-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
@@ -855,7 +804,7 @@
                         </a>
                     </article>
                     <!--==================== 80 ====================-->
-                     <article class="new__card" data-aos="fade-right">
+                     <article class="new__card"  >
                         <img src="assets/img/80-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
@@ -876,7 +825,7 @@
                         </a>
                     </article>
                      <!--==================== 79 ====================-->
-                     <article class="new__card" data-aos="fade-right">
+                     <article class="new__card"  >
                         <img src="assets/img/79-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
@@ -896,7 +845,7 @@
                         </a>
                     </article>
                      <!--==================== 77 ====================-->
-                     <article class="new__card" data-aos="fade-right">
+                     <article class="new__card"  >
                         <img src="assets/img/77-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
@@ -907,7 +856,6 @@
                                 <div class="contenedortalla">
                                     <p class="talla">35</p>
                                     <p class="talla">36</p>
-                                    <p class="talla">37</p>
                                     <p class="talla">38</p>
                                     <p class="talla">39</p>
                                 </div>
@@ -918,7 +866,7 @@
 
 
                      <!--==================== 74 ====================-->
-                    <article class="new__card" data-aos="fade-right">
+                    <article class="new__card"  >
                         <img src="assets/img/74-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
@@ -927,8 +875,8 @@
                                     $19.990
                                 </span>
                                 <div class="contenedortalla">
-                                    <p class="talla">37</p>
-                                    <p class="talla">38</p>
+                                    <p class="talla">36</p>
+                                    <p class="talla">39</p>
                                 </div>
                             </div>
                             <i class="fa-brands fa-whatsapp" style="color: #40EA5F;"></i>
@@ -936,7 +884,7 @@
                     </article>
 
                     <!--==================== 73 ====================-->
-                    <article class="new__card" data-aos="fade-right">
+                    <article class="new__card"  >
                         <img src="assets/img/73-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
@@ -954,13 +902,14 @@
 
 
                     <!--==================== 71 ====================-->
-                    <article class="new__card" data-aos="fade-right">
+                    <article class="new__card" category="ofertas">
                         <img src="assets/img/71-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
                             <div class="new__data">
-                                <span class="products__price">
+                                <span class="products__price ofertaprice">
                                     $14.990
+                                    <span class="oferta-price">$16.990</span>
                                 </span>
                                 <div class="contenedortalla">
                                     <p class="talla">37</p>
@@ -972,7 +921,7 @@
 
 
                     <!--==================== 68 ====================-->
-                    <article class="new__card" data-aos="fade-right">
+                    <article class="new__card"  >
                         <img src="assets/img/68-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
@@ -994,7 +943,7 @@
 
 
                     <!--==================== 67 ====================-->
-                    <article class="new__card" data-aos="fade-right">
+                    <article class="new__card"  >
                         <img src="assets/img/67-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
@@ -1015,41 +964,20 @@
                         </a>
                     </article>
 
-                    <!--==================== 66 ====================-->
-                    <article class="new__card" data-aos="fade-right">
-                        <img src="assets/img/66-min.jpg" alt="new image" class="new__img">
-                        
-                        <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
-                            <div class="new__data">
-                                <span class="products__price">
-                                    $21.990
-                                </span>
-                                <div class="contenedortalla">
-                                    <p class="talla">36</p>
-                                    <p class="talla">37</p>
-                                    <p class="talla">38</p>
-                                    <p class="talla">39</p>
-                                    <p class="talla">40</p>
-                                </div>
-                            </div>
-
-                            <i class="fa-brands fa-whatsapp" style="color: #40EA5F;"></i>
-                        </a>
-                    </article>
 
                     <!--==================== 65 ====================-->
-                    <article class="new__card" data-aos="fade-right">
+                    <article class="new__card"  >
                         <img src="assets/img/65-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
                             <div class="new__data">
-                                <span class="products__price">
-                                    $16.990
+                                <span class="products__price ofertaprice">
+                                    $10.000
+                                    <span class="oferta-price">$16.990</span>
                                 </span>
                                 <div class="contenedortalla">
+                                    <p class="talla">36</p>
                                     <p class="talla">38</p>
-                                    <p class="talla">39</p>
-                                    <p class="talla">40</p>
                                 </div>
                             </div>
 
@@ -1058,13 +986,14 @@
                     </article>
 
                     <!--==================== 64 ====================-->
-                    <article class="new__card" data-aos="fade-right">
+                    <article class="new__card" category="ofertas">
                         <img src="assets/img/64-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
                             <div class="new__data">
-                                <span class="products__price">
-                                    $12.990
+                                <span class="products__price ofertaprice">
+                                    $10.000
+                                    <span class="oferta-price">$12.990</span>
                                 </span>
                                 <div class="contenedortalla">
                                     <p class="talla">36</p>
@@ -1078,7 +1007,7 @@
                     </article>
 
                      <!--==================== 63 ====================-->
-                    <article class="new__card" data-aos="fade-right">
+                    <article class="new__card"  >
                         <img src="assets/img/63-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
@@ -1099,7 +1028,7 @@
                     </article>
 
                      <!--==================== 62 ====================-->
-                    <article class="new__card" data-aos="fade-right">
+                    <article class="new__card"  >
                         <img src="assets/img/62-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
@@ -1108,7 +1037,7 @@
                                     $19.990
                                 </span>
                                 <div class="contenedortalla">
-                                    <p class="talla">36</p>
+                                    <p class="talla">36</p> 
                                 </div>
                             </div>
 
@@ -1116,37 +1045,21 @@
                         </a>
                     </article>
 
-                    <!--==================== 61 ====================-->
-                    <article class="new__card" data-aos="fade-right">
-                        <img src="assets/img/61-min.jpg" alt="new image" class="new__img">
-                        
-                        <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
-                            <div class="new__data">
-                                <span class="products__price">
-                                    $11.990
-                                </span>
-                                <div class="contenedortalla">
-                                    <p class="talla">39</p>
-                                </div>
-                            </div>
-
-                            <i class="fa-brands fa-whatsapp" style="color: #40EA5F;"></i>
-                        </a>
-                    </article>
+ 
 
 
                     <!--==================== 59 ====================-->
-                    <article class="new__card" data-aos="fade-right">
+                    <article class="new__card" category="ofertas">
                         <img src="assets/img/59-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
                             <div class="new__data">
-                                <span class="products__price">
-                                    $11.990
+                                <span class="products__price ofertaprice">
+                                    $10.000
+                                    <span class="oferta-price">$11.990</span>
                                 </span>
                                 <div class="contenedortalla">
                                     <p class="talla">37</p>
-                                    <p class="talla">38</p>
                                 </div>
                             </div>
 
@@ -1155,7 +1068,7 @@
                     </article>
 
                     <!--==================== 58 ====================-->
-                    <article class="new__card" data-aos="fade-right">
+                    <article class="new__card" >
                         <img src="assets/img/58-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
@@ -1175,7 +1088,7 @@
                     </article>
 
                     <!--==================== 57 ====================-->
-                    <article class="new__card" data-aos="fade-right">
+                    <article class="new__card"  >
                         <img src="assets/img/57-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
@@ -1194,13 +1107,14 @@
                     </article>
 
                     <!--==================== 56 ====================-->
-                    <article class="new__card" data-aos="fade-right">
+                    <article class="new__card" category="ofertas">
                         <img src="assets/img/56-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
                             <div class="new__data">
-                                <span class="products__price">
-                                    $12.990
+                                <span class="products__price ofertaprice">
+                                    $10.000
+                                    <span class="oferta-price">$12.990</span>
                                 </span>
                                 <div class="contenedortalla">
                                     <p class="talla">40</p>
@@ -1211,13 +1125,14 @@
                         </a>
                     </article>
                     <!--==================== 54 ====================-->
-                    <article class="new__card" data-aos="fade-right">
+                    <article class="new__card" category="ofertas">
                         <img src="assets/img/54-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
                             <div class="new__data">
-                                <span class="products__price">
+                                <span class="products__price ofertaprice">
                                     $14.990
+                                    <span class="oferta-price">$16.990</span>
                                 </span>
                                 <div class="contenedortalla">
                                     <p class="talla">37</p>
@@ -1231,7 +1146,7 @@
 
 
                     <!--==================== 52 ====================-->
-                    <article class="new__card" data-aos="fade-right">
+                    <article class="new__card"  >
                         <img src="assets/img/52-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
@@ -1249,19 +1164,19 @@
                     </article>
 
                     <!--==================== 51 ====================-->
-                    <article class="new__card" data-aos="fade-right">
+                    <article class="new__card" category="ofertas">
                         <img src="assets/img/51-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
                             <div class="new__data">
-                                <span class="products__price">
-                                    $15.990
+                                <span class="products__price ofertaprice">
+                                    $10.000
+                                    <span class="oferta-price">$15.990</span>
                                 </span>
                                 <div class="contenedortalla">
                                     <p class="talla">36</p>
                                     <p class="talla">38</p>
                                     <p class="talla">39</p>
-                                    <p class="talla">41</p>
                                 </div>
                             </div>
 
@@ -1272,7 +1187,7 @@
 
 
                     <!--==================== 48 ====================-->
-                    <article class="new__card" data-aos="fade-right">
+                    <article class="new__card" >
                         <img src="assets/img/48-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
@@ -1290,7 +1205,7 @@
                     </article>
 
                     <!--==================== 47 ====================-->
-                    <article class="new__card" data-aos="fade-right">
+                    <article class="new__card">
                         <img src="assets/img/47-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
@@ -1310,7 +1225,7 @@
 
 
                     <!--==================== 45 ====================-->
-                    <article class="new__card" data-aos="fade-right">
+                    <article class="new__card" >
                         <img src="assets/img/45-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
@@ -1334,7 +1249,7 @@
 
 
                     <!--==================== 44 ====================-->
-                    <article class="new__card" data-aos="fade-right">
+                    <article class="new__card">
                         <img src="assets/img/44-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
@@ -1352,13 +1267,14 @@
                         </a>
                     </article>
                     <!--==================== 31 ====================-->
-                    <article class="new__card" data-aos="fade-right">
+                    <article class="new__card" category = "ofertas">
                         <img src="assets/img/31-min.jpg" alt="new image" class="new__img">
                         
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
                             <div class="new__data">
-                                <span class="products__price">
-                                    $18.990
+                                <span class="products__price ofertaprice">
+                                    $10.990
+                                    <span class="oferta-price">$18.990</span>
                                 </span>
                                 <div class="contenedortalla">
                                     <p class="talla">39</p>
@@ -1374,7 +1290,7 @@
 
 
                     <!--==================== 34 ====================-->
-                    <article class="new__card" data-aos="fade-left">
+                    <article class="new__card" >
                         <img src="assets/img/34-min.jpg" alt="new image" class="new__img">
 
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
@@ -1384,7 +1300,6 @@
                                 </span>
                                 <div class="contenedortalla">
                                     <p class="talla">36</p>
-                                    <p class="talla">37</p>
                                 </div>
                             </div>
 
@@ -1393,13 +1308,14 @@
                     </article>
 
                     <!--==================== 35 ====================-->
-                    <article class="new__card" data-aos="fade-right">
+                    <article class="new__card" category="ofertas">
                         <img src="assets/img/35-min.jpg" alt="new image" class="new__img">
 
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
                             <div class="new__data">
-                                <span class="products__price">
-                                    $14.990
+                                <span class="products__price ofertaprice">
+                                    $10.990
+                                    <span class="oferta-price">$14.990</span>
                                 </span>
                                 <div class="contenedortalla">
                                     <p class="talla">38</p>
@@ -1414,13 +1330,14 @@
 
 
                     <!--==================== 37====================-->
-                    <article class="new__card" data-aos="fade-right">
+                    <article class="new__card" category="ofertas">
                         <img src="assets/img/37-min.jpg" alt="new image" class="new__img">
 
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
                             <div class="new__data">
-                                <span class="products__price">
-                                    $17.990
+                                <span class="products__price ofertaprice">
+                                    $14.990
+                                    <span class="oferta-price">$17.990</span>
                                 </span>
                                 <div class="contenedortalla">
                                     <p class="talla">36</p>
@@ -1435,7 +1352,7 @@
 
 
                             <!--==================== 39====================-->
-                    <article class="new__card" data-aos="fade-right">
+                    <article class="new__card"  >
                         <img src="assets/img/39-min.jpg" alt="new image" class="new__img">
 
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
@@ -1453,17 +1370,17 @@
                     </article>
 
                                         <!--==================== 40====================-->
-                    <article class="new__card" data-aos="fade-left">
+                    <article class="new__card" category="ofertas">
                         <img src="assets/img/40-min.jpg" alt="new image" class="new__img">
 
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." target="_blank" class="new__link">
                             <div class="new__data">
-                                <span class="products__price">
-                                    $16.990
+                                <span class="products__price ofertaprice">
+                                    $10.000
+                                    <span class="oferta-price">$16.990</span>
                                 </span>
                                 <div class="contenedortalla">
                                     <p class="talla">39</p>
-                                    <p class="talla">40</p>
                                 </div>
                             </div>
 
@@ -1471,34 +1388,17 @@
                         </a>
                     </article>
 
-                    <!--==================== 6 ====================-->
-                    <article class="new__card" data-aos="fade-left">
-                        <img src="assets/img/6-min.jpg" alt="new image" class="new__img">
 
-                        <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." class="new__link" target="_blank">
-                            <div class="new__data">
-                                <span class="products__price">
-                                    $14.990
-                                </span>
 
-                                <div class="contenedortalla">
-
-                                    <p class="talla">40</p>
-                                </div>
-                            </div>
-                            <i class="fa-brands fa-whatsapp" style="color: #40EA5F;"></i>
-                        </a>
-                    </article>
-
-                    
                     <!--==================== 7 ====================-->
-                    <article class="new__card" data-aos="fade-right">
+                    <article class="new__card" category = "ofertas">
                         <img src="assets/img/7-min.jpg" alt="new image" class="new__img">
 
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." class="new__link" target="_blank">
                             <div class="new__data">
-                                <span class="products__price">
-                                    $14.990
+                                <span class="products__price ofertaprice">
+                                    $10.990
+                                    <span class="oferta-price">$14.990</span>
                                 </span>
 
                                 <div class="contenedortalla">
@@ -1511,13 +1411,14 @@
 
                     
                     <!--==================== 8 ====================-->
-                    <article class="new__card" data-aos="fade-left">
+                    <article class="new__card" category = "ofertas">
                         <img src="assets/img/8-min.jpg" alt="new image" class="new__img">
 
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." class="new__link" target="_blank">
                             <div class="new__data">
-                                <span class="products__price">
-                                    $14.990
+                                <span class="products__price ofertaprice">
+                                    $10.990
+                                    <span class="oferta-price">$14.990</span>
                                 </span>
 
                                 <div class="contenedortalla">
@@ -1529,56 +1430,19 @@
                         </a>
                     </article>
 
-                    
-                    <!--==================== 9 ====================-->
-                    <article class="new__card" data-aos="fade-right">
-                        <img src="assets/img/9-min.jpg" alt="new image" class="new__img">
-
-                        <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." class="new__link" target="_blank">
-                            <div class="new__data">
-                                <span class="products__price">
-                                    $14.990
-                                </span>
-
-                                <div class="contenedortalla">
-                                    <p class="talla">35</p>
-                                </div>
-                            </div>
-                            <i class="fa-brands fa-whatsapp" style="color: #40EA5F;"></i>
-                        </a>
-                    </article>
-
-                    
-                    <!--==================== 10 ====================-->
-                    <article class="new__card" data-aos="fade-left">
-                        <img src="assets/img/10-min.jpg" alt="new image" class="new__img">
-
-                        <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." class="new__link" target="_blank">
-                            <div class="new__data">
-                                <span class="products__price">
-                                    $14.990
-                                </span>
-
-                                <div class="contenedortalla">
-                                    <p class="talla">36</p>
-                                </div>
-                            </div>
-                            <i class="fa-brands fa-whatsapp" style="color: #40EA5F;"></i>
-                        </a>
-                    </article>
                     <!--==================== 13 ====================-->
-                    <article class="new__card" data-aos="fade-right">
+                    <article class="new__card" category = "ofertas">
                         <img src="assets/img/13-min.jpg" alt="new image" class="new__img">
 
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." class="new__link" target="_blank">
                             <div class="new__data">
-                                <span class="products__price">
-                                    $18.990
+                                <span class="products__price ofertaprice">
+                                    $10.990
+                                    <span class="oferta-price">$18.990</span>
                                 </span>
 
                                 <div class="contenedortalla">
                                     <p class="talla">36</p>
-                                    <p class="talla">38</p>
                                  </div>
                             </div>
                             <i class="fa-brands fa-whatsapp" style="color: #40EA5F;"></i>
@@ -1587,13 +1451,14 @@
 
 
                     <!--==================== 17 ====================-->
-                    <article class="new__card" data-aos="fade-right">
+                    <article class="new__card" category = "ofertas">
                         <img src="assets/img/17-min.jpg" alt="new image" class="new__img">
 
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." class="new__link" target="_blank">
                             <div class="new__data">
-                                <span class="products__price">
-                                    $12.990
+                                <span class="products__price ofertaprice">
+                                    $10.990
+                                    <span class="oferta-price">$12.990</span>
                                 </span>
 
                                 <div class="contenedortalla">
@@ -1608,13 +1473,14 @@
 
                     
                     <!--==================== 18 ====================-->
-                    <article class="new__card" data-aos="fade-left">
+                    <article class="new__card" category = "ofertas">
                         <img src="assets/img/18-min.jpg" alt="new image" class="new__img">
 
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." class="new__link" target="_blank">
                             <div class="new__data">
-                                <span class="products__price">
-                                    $15.990
+                                <span class="products__price ofertaprice">
+                                    $10.990
+                                    <span class="oferta-price">$14.990</span>
                                 </span>
 
                                 <div class="contenedortalla">
@@ -1630,7 +1496,7 @@
 
 
                     <!--==================== 27 ====================-->
-                    <article class="new__card" data-aos="fade-right">
+                    <article class="new__card"  >
                         <img src="assets/img/27-min.jpg" alt="new image" class="new__img">
 
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." class="new__link" target="_blank">
@@ -1651,12 +1517,13 @@
 
 
                     <!--==================== 30 ====================-->
-                    <article class="new__card" data-aos="fade-left">
+                    <article class="new__card" category="ofertas">
                         <img src="assets/img/30-min.jpg" alt="new image" class="new__img">
                         <a href="https://api.whatsapp.com/send?phone=+56958826024&text=Hola,%20me%20interesa%20consultar%20por%20unas%20zapatillas." class="new__link" target="_blank">
                             <div class="new__data">
-                                <span class="products__price">
-                                    $14.990
+                                <span class="products__price ofertaprice">
+                                    $10.990
+                                    <span class="oferta-price">$14.990</span>
                                 </span>
 
                                 <div class="contenedortalla">
@@ -1675,7 +1542,7 @@
 
             <!--==================== Instagram ====================-->
             <div class="seccioninsta" id="seccioninsta">
-                <p class="fs-18 gsf-white-text mg-bottom-5" style="letter-spacing: 0.3em; opacity: 0.5; text-align: center;">SÍGUENOS EN INSTAGRAM</p>
+                <p class="fs-18 gsf-white-text mg-bottom-5" style="letter-spacing: 0.3em; color: white; text-align: center;">SÍGUENOS EN INSTAGRAM</p>
                 <p class="tamañoinstapyme" style="text-align: center;" ><a class="instapyme fs-18 gsf-white-text" href="https://www.instagram.com/tendencias_mym/" target="_blank" rel="noopener">@</a><a class="instapyme fs-18 gsf-white-text" href="https://www.instagram.com/tendencias_mym/" target="_blank" rel="noopener">tendencia_mym
 
                 </a></p>
@@ -1829,8 +1696,13 @@
             window.addEventListener("scroll",activeMenu);
         
         </script>
-        <!--=============== SCROLLREVEAL ===============-->
-        <script src="assets/js/scrollreveal.min.js"></script>
+
+
+
+
+
+
+
 
         <!--=============== SWIPER JS ===============-->
         <script src="assets/js/swiper-bundle.min.js"></script>
