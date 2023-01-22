@@ -370,11 +370,33 @@ body.dark-theme {
 
 }
 
+@media screen and (max-width: 387px) {
+  .talla{
+    font-size: 13px;
+  }
+
+  .oferta-price,.products__price{
+    font-size: 14px;
+  }
+
+
+
+
+}
+
+@media screen and (max-width: 368px) {
+  .oferta-price,.products__price{
+  font-size: 13px;
+  }
+}
+
+
+
+
 @media screen and (max-width: 562px) {
   
   .talla{
   
-    background: #FFDDEF;
     margin-right: 2px;
     margin-bottom: 0;
   
@@ -526,7 +548,7 @@ body.dark-theme {
 
 .oferta-price{
   text-decoration: line-through;
-  margin-left: 10px;
+  margin-left: 3px;
   color: #707070;
 }
 
